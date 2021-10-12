@@ -41,12 +41,25 @@ body {
   margin-left: 70px;
 }
 
-/* ---------- Bckground text (YEEZY BOOST 370 V2) ---------- */
+/* ---------- Bckground text (YEEZY BOOST 370 V2) & Adidas ---------- */
+
+/* adidas */
+.adidas {
+  position: absolute;
+  top: 100px;
+  margin-left: -110px;
+  z-index: -1;
+}
+
+/* img adidas */
+.adidas img {
+  width: 1000px;
+}
 
 /* background text */
 .back-text {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 23%;
   z-index: -1;
   transform: rotate(-90deg);
@@ -54,34 +67,43 @@ body {
 }
 
 /* YEEZY BOOST */
-.back-text span:nth-child(1) {
+.back-text div:nth-child(1) {
+  width: 420px;
+  line-height: 100px;
+  margin-left: 160px;
   font-weight: bolder;
-  font-size: 110px;
+  font-size: 100px;
   letter-spacing: 13px;
   text-align: justify;
 }
 
 /* BOOST */
-.back-text span:nth-child(1) p:nth-child(2) {
-  margin-top: -90px;
+.back-text div:nth-child(1) span {
+  padding-left: 20px;
 }
 
-/* 370 V2 */
-.back-text span:nth-child(2) {
+/* 370*/
+.back-text div:nth-child(2) {
+  width: 650px;
+  line-height: 240px;
   font-size: 300px;
   font-weight: 900;
-  letter-spacing: 20px;
+  letter-spacing: 60px;
   text-align: center;
   color: white;
   -webkit-text-stroke: 0.5px black;
 }
 
-.back-text span:nth-child(2) p {
-  margin-top: -150px;
-}
-
-.back-text span:nth-child(2) p:nth-child(2) {
-  margin-top: -80px;
+/* V2 */
+.back-text div:nth-child(3) {
+  width: 300px;
+  line-height: 160px;
+  margin-left: 280px;
+  font-size: 200px;
+  font-weight: 900;
+  letter-spacing: 30px;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
 }
 
 /* ---------- Banner ---------- */
@@ -94,7 +116,7 @@ body {
 /* table banner sepatu */
 .banner table {
   margin-left: 28%;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 /* gambar utama banner */
