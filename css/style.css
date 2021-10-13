@@ -41,7 +41,7 @@ body {
   margin-left: 70px;
 }
 
-/* ---------- Bckground text (YEEZY BOOST 370 V2) & Adidas ---------- */
+/* ---------- Bckground top (YEEZY BOOST 370 V2, Adidas & Gray-bg) ---------- */
 
 /* adidas */
 .adidas {
@@ -54,6 +54,34 @@ body {
 /* img adidas */
 .adidas img {
   width: 1000px;
+}
+
+/* grey-bg */
+.grey-bg {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* grey-bg (segitiga) */
+.grey-bg .segitiga {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-left: 904px solid transparent;
+  border-bottom: 300px solid #d7d7d7;
+  border-top: 225px solid transparent;
+  border-right: 450px solid #d7d7d7;
+}
+
+/* grey-bg (kotak) */
+.grey-bg .kotak {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(#d7d7d7, white);
+  top: 670px;
 }
 
 /* background text */
@@ -90,7 +118,7 @@ body {
   font-weight: 900;
   letter-spacing: 60px;
   text-align: center;
-  color: white;
+  color: transparent;
   -webkit-text-stroke: 0.5px black;
 }
 
@@ -102,7 +130,7 @@ body {
   font-size: 200px;
   font-weight: 900;
   letter-spacing: 30px;
-  color: white;
+  color: transparent;
   -webkit-text-stroke: 0.5px black;
 }
 
