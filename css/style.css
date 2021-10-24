@@ -70,7 +70,7 @@ body {
   height: 0;
   border-left: 904px solid transparent;
   border-bottom: 300px solid #d7d7d7;
-  border-top: 225px solid transparent;
+  border-top: 205px solid transparent;
   border-right: 450px solid #d7d7d7;
 }
 
@@ -81,7 +81,7 @@ body {
   width: 100%;
   height: 600px;
   background: linear-gradient(#d7d7d7, white);
-  top: 670px;
+  top: 650px;
 }
 
 /* background text */
@@ -206,6 +206,80 @@ body {
 
 .banner table .change-to-green:hover {
   background-color: #8ead12;
+}
+
+/* ---------- Harga Banner ---------- */
+.harga-banner {
+  position: absolute;
+  top: 600px;
+  width: 32%;
+  margin-left: 9%;
+}
+
+/* YEEZY BOST 350 V2 ZEBRA */
+.harga-banner div:nth-child(1) {
+  width: 34%;
+  margin: auto;
+  line-height: 25px;
+  text-align: center;
+  color: #8f8e8e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.harga-banner div:nth-child(1) span {
+  color: black;
+}
+
+/* harga */
+.harga-banner div:nth-child(2) {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+/* harga awal */
+.harga-banner div:nth-child(2) span:nth-child(1) {
+  font-size: 22px;
+  color: rgb(105, 104, 104);
+  font-weight: normal;
+  text-decoration: line-through solid black;
+  vertical-align: text-top;
+}
+
+/* diskon */
+.harga-banner div:nth-child(2) span:nth-child(2) {
+  font-size: 18px;
+  background-color: #8f8e8e;
+  vertical-align: text-top;
+  margin-left: 7px;
+  padding: 3px;
+}
+
+/* ---------- Shoes Description ---------- */
+.description {
+  width: 100%;
+  /* border: 2px solid black; */
+  margin-top: 280px;
+}
+
+/* judul */
+.description .judul {
+  width: 45%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  line-height: 15px;
+}
+
+/* back-judul */
+.description .judul span:nth-child(2) {
+  font-size: 60.5px;
+  color: transparent;
+  -webkit-text-stroke: 0.7px black;
 }
 
 @media (max-width: 600px) {
