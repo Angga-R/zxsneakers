@@ -27,4 +27,23 @@ function eventBanner() {
   });
 }
 
+function scrollUp() {
+  const btnToTop = document.getElementById("back-to-top");
+
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    btnToTop.style.display = "block";
+  } else {
+    btnToTop.style.display = "none";
+  }
+
+  btnToTop.addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
+
+window.onscroll = function () {
+  scrollUp();
+};
+
 eventBanner();

@@ -5,9 +5,30 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
+}
+
+/* tombol back to top */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+#back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.411);
 }
 
 /* ---------- Navbar ---------- */
