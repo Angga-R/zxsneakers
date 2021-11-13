@@ -80,14 +80,14 @@ body {
 /* grey-bg */
 .grey-bg {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 /* grey-bg (segitiga) */
 .grey-bg .segitiga {
   position: absolute;
   z-index: -1;
-  width: 0;
+  width: 100%;
   height: 0;
   border-left: 904px solid transparent;
   border-bottom: 300px solid #d7d7d7;
@@ -100,9 +100,9 @@ body {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 600px;
+  height: 800px;
   background: linear-gradient(#d7d7d7, white);
-  top: 650px;
+  top: 610px;
 }
 
 /* background text */
@@ -240,7 +240,7 @@ body {
 
 /* YEEZY BOST 350 V2 ZEBRA */
 .harga-banner div:nth-child(1) {
-  width: 34%;
+  width: 145px;
   margin: auto;
   line-height: 25px;
   text-align: center;
