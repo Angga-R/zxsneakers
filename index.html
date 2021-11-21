@@ -29,6 +29,9 @@
       ></span>
     </button>
 
+    <!-- Penahan -->
+    <div class="penahan"></div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" id="top">
       <a class="navbar-brand" href="">
@@ -64,7 +67,7 @@
 
     <!-- background warna grey -->
     <div class="grey-bg">
-      <div class="segitiga"></div>
+      <img src="img/segitiga.png" />
       <div class="kotak"></div>
     </div>
 
@@ -126,10 +129,10 @@
     </div>
 
     <!-- Description -->
-    <div class="description" id="description">
+    <div class="description">
       <div class="judul">
         <span>Shoes Description</span>
-        <span>Shoes Description</span>
+        <span id="description">Shoes Description</span>
       </div>
 
       <div class="content">
@@ -184,21 +187,83 @@
 
     <!-- Product -->
     <div class="product" id="product">
-      <img src="img/product/product_1/main_img.png" />
-      <img src="img/product/product_2/main_img.png" />
-      <img src="img/product/product_3/main_img.png" />
-      <img src="img/product/product_4/main_img.png" />
-      <img src="img/product/product_5/main_img.png" />
-      <img src="img/product/product_6/main_img.png" />
-      <img src="img/product/product_7/main_img.png" />
-      <img src="img/product/product_8/main_img.png" />
-      <img src="img/product/product_9/main_img.png" />
-      <img src="img/product/product_10/main_img.png" />
-      <img src="img/product/product_11/main_img.png" />
-      <img src="img/product/product_12/main_img.png" />
-      <img src="img/product/product_13/main_img.png" />
-      <img src="img/product/product_14/main_img.png" />
-      <img src="img/product/product_15/main_img.png" />
+      <img src="img/product/product_1/main_img.png" class="product-1" />
+      <img src="img/product/product_2/main_img.png" class="product-2" />
+      <img src="img/product/product_3/main_img.png" class="product-3" />
+      <img src="img/product/product_4/main_img.png" class="product-4" />
+      <img src="img/product/product_5/main_img.png" class="product-5" />
+      <img src="img/product/product_6/main_img.png" class="product-6" />
+      <img src="img/product/product_7/main_img.png" class="product-7" />
+      <img src="img/product/product_8/main_img.png" class="product-8" />
+      <img src="img/product/product_9/main_img.png" class="product-9" />
+      <img src="img/product/product_10/main_img.png" class="product-10" />
+      <img src="img/product/product_11/main_img.png" class="product-11" />
+      <img src="img/product/product_12/main_img.png" class="product-12" />
+      <img src="img/product/product_13/main_img.png" class="product-13" />
+      <img src="img/product/product_14/main_img.png" class="product-14" />
+      <img src="img/product/product_15/main_img.png" class="product-15" />
+    </div>
+
+    <!-- Preview Product -->
+    <div class="preview-product">
+      <div class="content">
+        <!-- content-top -->
+        <div class="content-top">
+          <span>Nama Product</span>
+          <span>&times;</span>
+        </div>
+
+        <!-- Preview image -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner/main_white.png" class="d-block" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/second_white.png" class="d-block" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner/fourth_white.png" class="d-block" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carouselExampleIndicators"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carouselExampleIndicators"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+
+        <!-- Harga -->
+        <div class="harga">Rp. 500.000</div>
+        <!-- button order -->
+        <button id="btn-order">Buy</button>
+      </div>
     </div>
 
     <!-- Footer -->

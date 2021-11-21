@@ -26,6 +26,13 @@ html {
   background-color: rgba(0, 0, 0, 0.411);
 }
 
+/* penahan */
+.penahan {
+  width: 100%;
+  height: 90px;
+  display: none;
+}
+
 /* ---------- Navbar ---------- */
 
 /* logo navbar */
@@ -79,15 +86,11 @@ html {
 }
 
 /* grey-bg (segitiga) */
-.grey-bg .segitiga {
+.grey-bg img {
+  width: 100%;
   position: absolute;
   z-index: -1;
-  width: 100%;
-  height: 0;
-  border-left: 904px solid transparent;
-  border-bottom: 300px solid #d7d7d7;
-  border-top: 205px solid transparent;
-  border-right: 450px solid #d7d7d7;
+  margin-top: 20px;
 }
 
 /* grey-bg (kotak) */
@@ -96,8 +99,8 @@ html {
   z-index: -1;
   width: 100%;
   height: 800px;
-  background: linear-gradient(#d7d7d7, white);
-  top: 610px;
+  background: linear-gradient(#dedada, white);
+  margin-top: 510px;
 }
 
 /* background text */
@@ -399,6 +402,7 @@ html {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 150px;
+  text-align: center;
 }
 
 .product img {
@@ -409,6 +413,94 @@ html {
 
 .product img:hover {
   opacity: 0.6;
+}
+
+/* ---------- Preview Product ---------- */
+
+.preview-product {
+  display: none;
+  width: 100%;
+  height: 700px;
+  padding-top: 70px;
+  position: fixed;
+  background-color: #0000008a;
+  bottom: 0;
+}
+
+/* content */
+.preview-product .content {
+  width: 70%;
+  height: 600px;
+  margin: auto;
+  background-color: #d3d1d1;
+}
+
+/* content-top (nama barang & close) */
+.preview-product .content .content-top {
+  width: 100%;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Nama barang */
+.preview-product .content .content-top span:nth-child(1) {
+  font-size: 35px;
+  margin-right: 68%;
+}
+
+/* Close */
+.preview-product .content .content-top span:nth-child(2) {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* wadah img (carousel) */
+.carousel-item {
+  width: 100%;
+  height: 430px;
+}
+
+/* img carousel */
+.carousel-item img {
+  width: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* control untuk previous img */
+.carousel-control-prev {
+  background: none;
+  border: none;
+}
+
+/* control untuk next img */
+.carousel-control-next {
+  background: none;
+  border: none;
+}
+
+/* harga di preview */
+.preview-product .content .harga {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* button order */
+.preview-product .content #btn-order {
+  font-size: 33px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(12, 151, 12);
+  border: none;
+  margin-top: 8px;
+}
+
+.preview-product .content #btn-order:hover {
+  background-color: rgb(4, 109, 4);
 }
 
 /* ---------- Footer ---------- */

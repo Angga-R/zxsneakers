@@ -30,15 +30,18 @@ function eventBanner() {
 function scrollUp() {
   const btnToTop = document.getElementById("back-to-top");
   const navbar = document.getElementsByTagName("nav")[0];
+  const penahan = document.getElementsByClassName("penahan")[0];
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     btnToTop.style.display = "block";
+    penahan.style.display = "block";
     navbar.style.position = "fixed";
     navbar.style.top = "0";
     navbar.style.width = "100%";
     navbar.style.backgroundColor = "#00000025";
   } else {
     btnToTop.style.display = "none";
+    penahan.style.display = "none";
     navbar.style.position = "relative";
     navbar.style.backgroundColor = "#00000000";
   }
@@ -53,4 +56,24 @@ window.onscroll = function () {
   scrollUp();
 };
 
+function eventProduct() {
+  const product = document.getElementById("product");
+  const previewProduct = document.querySelector(".preview-product");
+  const contentTop = previewProduct.querySelector(".content-top");
+  const close = contentTop.getElementsByTagName("span")[1];
+
+  product.addEventListener("click", function (e) {
+    if (e.target.className === "product-1") {
+      previewProduct.style.display = "block";
+    } else if (e.target.className === "product-2") {
+      previewProduct.style.display = "block";
+    }
+  });
+
+  close.addEventListener("click", function () {
+    previewProduct.style.display = "none";
+  });
+}
+
 eventBanner();
+eventProduct();
