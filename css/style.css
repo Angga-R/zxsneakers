@@ -433,25 +433,38 @@ html {
   height: 600px;
   margin: auto;
   background-color: #d3d1d1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 /* content-top (nama barang & close) */
 .preview-product .content .content-top {
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
   background-color: white;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 /* Nama barang */
-.preview-product .content .content-top span:nth-child(1) {
+.preview-product .content .content-top div:nth-child(1) {
+  margin-left: 30px;
   font-size: 35px;
-  margin-right: 68%;
 }
 
 /* Close */
-.preview-product .content .content-top span:nth-child(2) {
+.preview-product .content .content-top div:nth-child(2) {
+  margin-right: 30px;
   font-size: 40px;
+  text-align: right;
+}
+
+.preview-product .content .content-top div:nth-child(2) span {
   cursor: pointer;
 }
 
@@ -494,9 +507,11 @@ html {
   font-size: 33px;
   width: 100%;
   text-align: center;
-  background-color: rgb(12, 151, 12);
+  background-color: rgb(5, 128, 5);
   border: none;
-  margin-top: 8px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .preview-product .content #btn-order:hover {
