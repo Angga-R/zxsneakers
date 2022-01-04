@@ -161,6 +161,10 @@ html {
   /* border: 2px solid black; */
 }
 
+.banner table:nth-child(2) {
+  display: none;
+}
+
 /* table banner sepatu */
 .banner table {
   margin-left: 28%;
@@ -512,18 +516,28 @@ footer img {
   height: 280px;
 }
 
+/* ---------- Mobile ---------- */
 @media (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* menu navbar */
   #navbarNav {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.021);
+    background-color: rgba(0, 0, 0, 0.041);
   }
 
   .navbar .navbar-nav {
     margin-left: 0;
   }
 
+  /* garis pemisah menu navbar */
   .navbar .navbar-nav .nav-item:nth-child(2) {
     margin-left: 0;
     border-top: 3px solid black;
@@ -535,7 +549,117 @@ footer img {
     padding-bottom: 10px;
   }
 
+  /* penahan */
+  .penahan {
+    display: block;
+  }
+
+  /* background text */
   .back-text {
     display: none;
+  }
+
+  /* adidas */
+  .adidas {
+    top: 140px;
+    margin-left: -30px;
+  }
+
+  /* img adidas */
+  .adidas img {
+    width: 250px;
+  }
+
+  /* grey-bg (segitiga) */
+  .grey-bg {
+    margin-top: 45px;
+  }
+
+  /* grey-bg (kotak) */
+  .grey-bg .kotak {
+    margin-top: 130px;
+  }
+
+  /* banner */
+  .banner {
+    width: 100%;
+  }
+
+  /* hidden table untuk desktop */
+  .banner table:nth-child(1) {
+    display: none;
+  }
+
+  /* show table untuk mobile */
+  .banner table:nth-child(2) {
+    display: block;
+  }
+
+  /* table */
+  .banner table {
+    margin-left: 7%;
+    margin-top: 80px;
+  }
+
+  /* gambar utama banner */
+  .banner table .img-main-banner {
+    width: 270px;
+    height: 130px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  /* img second */
+  .banner table .img-second-banner {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+
+  .banner table tr:nth-child(2) td {
+    text-align: center;
+  }
+
+  /* mengatur grid tombol ganti warna sepatu */
+  .banner table tr:nth-child(3) td {
+    padding-left: 120%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  /* tombol ganti warna sepatu */
+  .banner table .change-to-black,
+  .banner table .change-to-green {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+  }
+
+  /* harga banner */
+  .harga-banner {
+    top: 420px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /* YEEZY BOOST 350 V2 ZEBRA */
+  .harga-banner div:nth-child(1) {
+    font-size: 15px;
+    width: 101px;
+    line-height: 17px;
+  }
+
+  /* harga */
+  .harga-banner div:nth-child(2) {
+    font-size: 25px;
+  }
+
+  /* harga awal */
+  .harga-banner div:nth-child(2) span:nth-child(1) {
+    font-size: 12px;
+  }
+
+  /* diskon */
+  .harga-banner div:nth-child(2) span:nth-child(2) {
+    font-size: 10px;
   }
 }

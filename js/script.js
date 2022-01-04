@@ -1,28 +1,59 @@
 function eventBanner() {
   const banner = document.querySelector(".banner");
-  const mainImg = document.querySelector(".img-main-banner");
-  const secondImg = document.getElementById("second-img");
-  const thirdImg = document.getElementById("third-img");
-  const fourthImg = document.getElementById("fourth-img");
 
-  banner.addEventListener("click", function (e) {
-    console.log(e.target);
+  // desktop
+  const table1 = banner.getElementsByTagName("table")[0];
+  const mainImg1 = table1.querySelector(".img-main-banner");
+  const secondImg1 = table1.querySelector("#second-img");
+  const thirdImg1 = table1.querySelector("#third-img");
+  const fourthImg1 = table1.querySelector("#fourth-img");
+
+  // mobile
+  const table2 = banner.getElementsByTagName("table")[1];
+  const mainImg2 = table2.querySelector(".img-main-banner");
+  const secondImg2 = table2.querySelector("#second-img");
+  const thirdImg2 = table2.querySelector("#third-img");
+  const fourthImg2 = table2.querySelector("#fourth-img");
+
+  // desktop
+  table1.addEventListener("click", function (e) {
     if (e.target.className == "change-to-black") {
-      mainImg.src = "img/banner/main_white.png";
-      secondImg.src = "img/banner/second_white.png";
-      thirdImg.src = "img/banner/third_white.png";
-      fourthImg.src = "img/banner/fourth_white.png";
+      mainImg1.src = "img/banner/main_white.png";
+      secondImg1.src = "img/banner/second_white.png";
+      thirdImg1.src = "img/banner/third_white.png";
+      fourthImg1.src = "img/banner/fourth_white.png";
     } else if (e.target.className == "change-to-green") {
-      mainImg.src = "img/banner/main_green.png";
-      secondImg.src = "img/banner/second_green.png";
-      thirdImg.src = "img/banner/third_green.png";
-      fourthImg.src = "img/banner/fourth_green.png";
+      mainImg1.src = "img/banner/main_green.png";
+      secondImg1.src = "img/banner/second_green.png";
+      thirdImg1.src = "img/banner/third_green.png";
+      fourthImg1.src = "img/banner/fourth_green.png";
     } else if (e.target.className == "change-img") {
-      const img4 = fourthImg.src;
-      fourthImg.src = mainImg.src;
-      mainImg.src = secondImg.src;
-      secondImg.src = thirdImg.src;
-      thirdImg.src = img4;
+      const img4 = fourthImg1.src;
+      fourthImg1.src = mainImg1.src;
+      mainImg1.src = secondImg1.src;
+      secondImg1.src = thirdImg1.src;
+      thirdImg1.src = img4;
+    }
+  });
+
+  // mobile
+  table2.addEventListener("click", function (e) {
+    if (e.target.className == "change-to-black") {
+      mainImg2.src = "img/banner/main_white.png";
+      secondImg2.src = "img/banner/second_white.png";
+      thirdImg2.src = "img/banner/third_white.png";
+      fourthImg2.src = "img/banner/fourth_white.png";
+    } else if (e.target.className == "change-to-green") {
+      mainImg2.src = "img/banner/main_green.png";
+      secondImg2.src = "img/banner/second_green.png";
+      thirdImg2.src = "img/banner/third_green.png";
+      fourthImg2.src = "img/banner/fourth_green.png";
+    } else if (e.target.className == "img-main-banner") {
+      const img4 = fourthImg2.src;
+      fourthImg2.src = mainImg2.src;
+      mainImg2.src = secondImg2.src;
+      secondImg2.src = thirdImg2.src;
+      thirdImg2.src = img4;
     }
   });
 }
@@ -41,8 +72,6 @@ function scrollUp() {
     navbar.style.backgroundColor = "#00000025";
   } else {
     btnToTop.style.display = "none";
-    penahan.style.display = "none";
-    navbar.style.position = "relative";
     navbar.style.backgroundColor = "#00000000";
   }
 
