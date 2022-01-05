@@ -81,26 +81,22 @@ html {
 
 /* grey-bg */
 .grey-bg {
-  width: 100%;
-  margin-top: 10px;
-}
-
-/* grey-bg (segitiga) */
-.grey-bg img {
-  width: 100%;
   position: absolute;
   z-index: -1;
-  margin-top: 20px;
+  width: 100%;
+  height: 700px;
 }
 
 /* grey-bg (kotak) */
 .grey-bg .kotak {
+  -webkit-clip-path: polygon(100% 1%, 100% 100%, 0 100%, 0 57%);
+  clip-path: polygon(100% 1%, 100% 100%, 0 100%, 0 57%);
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 800px;
+  height: 100%;
   background: linear-gradient(#dedada, white);
-  margin-top: 510px;
+  margin-top: 7%;
 }
 
 /* background text */
@@ -167,6 +163,7 @@ html {
 
 /* table banner sepatu */
 .banner table {
+  margin: auto;
   margin-left: 28%;
   margin-top: 140px;
 }
@@ -568,23 +565,20 @@ footer img {
 
   /* adidas */
   .adidas {
-    top: 140px;
+    top: 145px;
     margin-left: -30px;
   }
 
   /* img adidas */
   .adidas img {
-    width: 250px;
-  }
-
-  /* grey-bg (segitiga) */
-  .grey-bg {
-    margin-top: 45px;
+    width: 75%;
   }
 
   /* grey-bg (kotak) */
   .grey-bg .kotak {
-    margin-top: 130px;
+    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+    margin-top: 27%;
   }
 
   /* banner */
@@ -604,7 +598,8 @@ footer img {
 
   /* table */
   .banner table {
-    margin-left: 7%;
+    width: 275px;
+    margin: auto;
     margin-top: 80px;
   }
 
@@ -644,8 +639,8 @@ footer img {
   /* harga banner */
   .harga-banner {
     top: 420px;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0;
   }
 
   /* YEEZY BOOST 350 V2 ZEBRA */
@@ -657,6 +652,8 @@ footer img {
 
   /* harga */
   .harga-banner div:nth-child(2) {
+    width: 250px;
+    margin: auto;
     font-size: 25px;
   }
 
@@ -677,7 +674,8 @@ footer img {
 
   /* judul description */
   .description .judul {
-    width: 100%;
+    width: 262px;
+    margin: auto;
     font-size: 28px;
     line-height: 7px;
   }
@@ -702,7 +700,7 @@ footer img {
   .description .content span:nth-child(1) {
     font-size: 150px;
     left: 10px;
-    margin-top: 100px;
+    margin-top: 110px;
   }
 
   /* MEN, WOMAN */
@@ -746,7 +744,7 @@ footer img {
     margin-left: 3%;
     margin-right: 1.5%;
     font-size: 15px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   /* rating */
@@ -776,7 +774,7 @@ footer img {
 
   /* preview product */
   .preview-product {
-    padding-top: 120px;
+    padding-top: 180px;
   }
 
   /* content preview product */
